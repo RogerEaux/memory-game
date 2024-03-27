@@ -1,0 +1,22 @@
+.card-wrapper {
+  max-width: 282px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  background-color: yellow;
+  padding: 8px;
+  border: 8px solid black;
+  border-radius: 5px;
+}
+
+.card-wrapper img {
+  height: 250px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.card-wrapper p {
+  font-size: 2rem;
+  font-weight: 700;
+}
