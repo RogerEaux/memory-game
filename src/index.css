@@ -1,8 +1,14 @@
+@font-face {
+  font-family: DeadBamboo;
+  src: url('./assets/fonts/dead-bamboo.ttf');
+}
+
 :root {
   font-family: Helvetica, Arial, sans-serif;
   --orange: #ffbe30;
   --black: #000100;
   --yellow: #fff100;
+  --white: #fffeff;
   background-image: url(./assets/odd-taxi-background.jpg);
   background-size: cover;
   background-position: center;
