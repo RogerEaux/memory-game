@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Card.css';
+import '../styles/Card.css';
 
 function Card({ char, addScore, resetGame, cardReset, randomizeOrder }) {
   const [clicked, setClicked] = useState(false);

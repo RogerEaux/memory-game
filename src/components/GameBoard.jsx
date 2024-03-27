@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Card from './Card';
-import initialAnimals from './initialAnimals';
-import './GameBoard.css';
+import initialAnimals from '../data/initialAnimals';
+import '../styles/GameBoard.css';
 
 function GameBoard({ addScore, resetGame, cardReset }) {
   const [characters, setCharacters] = useState(initialAnimals);
