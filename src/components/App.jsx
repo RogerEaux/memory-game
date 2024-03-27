@@ -35,6 +35,9 @@ function App() {
           cardReset={cardReset}
         />
       </main>
+      <div
+        className={currentScore === 10 || currentScore === 0 ? 'fade' : null}
+      ></div>
     </>
   );
 }
