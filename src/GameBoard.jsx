@@ -3,7 +3,7 @@ import Card from './Card';
 import initialAnimals from './initialAnimals';
 import './GameBoard.css';
 
-function GameBoard() {
+function GameBoard({ addScore, resetGame, cardReset }) {
   const [characters, setCharacters] = useState(initialAnimals);
 
   return (
@@ -11,7 +11,12 @@ function GameBoard() {
       <ul className="card-grid">
         {characters.map((char) => (
           <li key={char.name}>
-            <Card char={char} />
+            <Card
+              char={char}
+              addScore={addScore}
+              resetGame={resetGame}
+              cardReset={cardReset}
+            />
           </li>
         ))}
       </ul>
