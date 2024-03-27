@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Card.css';
 
-function Card({ char, addScore, resetGame, cardReset }) {
+function Card({ char, addScore, resetGame, cardReset, randomizeOrder }) {
   const [clicked, setClicked] = useState(false);
 
   function handleClick() {
@@ -11,10 +11,10 @@ function Card({ char, addScore, resetGame, cardReset }) {
     } else {
       resetGame();
     }
+    randomizeOrder();
   }
 
   useEffect(() => {
-    console.log('Effect');
     if (cardReset) {
       setClicked(false);
     }
