@@ -1,8 +1,8 @@
 .card-wrapper {
-  max-width: 282px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
   align-items: center;
   padding: 8px;
   border: 8px solid var(--orange);
@@ -12,12 +12,13 @@
 }
 
 .card-wrapper img {
-  height: 250px;
+  height: 218px;
   width: auto;
   border-radius: 5px;
 }
 
 .card-wrapper p {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: DeadBamboo;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
