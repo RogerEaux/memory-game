@@ -13,6 +13,13 @@ function Card({ char, addScore, resetGame, cardReset }) {
     }
   }
 
+  useEffect(() => {
+    console.log('Effect');
+    if (cardReset) {
+      setClicked(false);
+    }
+  }, [cardReset]);
+
   return (
     <div className="card-wrapper" onClick={handleClick}>
       <img src={char.image} alt={char.name} />
