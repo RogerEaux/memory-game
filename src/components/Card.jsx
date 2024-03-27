@@ -22,7 +22,7 @@ function Card({ char, addScore, resetGame, cardReset, randomizeOrder }) {
 
   return (
     <button className="card-wrapper" onClick={handleClick}>
-      <img src={char.image} alt={char.name} />
+      <img src={char.image} alt="" />
       <p>{char.name}</p>
     </button>
   );
