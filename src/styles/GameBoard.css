@@ -5,3 +5,15 @@
   justify-content: center;
   gap: 16px;
 }
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, 130px);
+  }
+}
