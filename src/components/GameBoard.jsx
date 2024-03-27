@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from './Card';
 import initialAnimals from '../data/initialAnimals';
+import initialHumans from '../data/initialHumans';
 import '../styles/GameBoard.css';
 
-function GameBoard({ addScore, resetGame, cardReset }) {
+function GameBoard({ currentScore, addScore, resetGame, cardReset }) {
   const [characters, setCharacters] = useState(initialAnimals);
 
   function randomizeOrder() {
@@ -19,6 +20,12 @@ function GameBoard({ addScore, resetGame, cardReset }) {
 
     setCharacters(newCharacters);
   }
+
+  useEffect(() => {
+    if (currentScore === 10) {
+      setCharacters(initialHumans);
+    }
+  }, [currentScore]);
 
   return (
     <>

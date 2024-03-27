@@ -29,6 +29,7 @@ function App() {
       </header>
       <main>
         <GameBoard
+          currentScore={currentScore}
           addScore={addScore}
           resetGame={resetGame}
           cardReset={cardReset}
