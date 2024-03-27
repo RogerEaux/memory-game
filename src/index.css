@@ -3,6 +3,9 @@
   --orange: #ffbe30;
   --black: #000100;
   --yellow: #fff100;
+  background-image: url(./assets/odd-taxi-background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 * {
