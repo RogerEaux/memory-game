@@ -9,6 +9,12 @@
   border-radius: 5px;
   background-color: var(--black);
   color: var(--yellow);
+  cursor: pointer;
+}
+
+.card-wrapper:hover {
+  box-shadow: 0 0 16px 8px var(--white);
+  outline: none;
 }
 
 .card-wrapper img {
