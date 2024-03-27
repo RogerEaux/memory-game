@@ -24,6 +24,8 @@ function GameBoard({ currentScore, addScore, resetGame, cardReset }) {
   useEffect(() => {
     if (currentScore === 10) {
       setCharacters(initialHumans);
+    } else if (currentScore === 0) {
+      setCharacters(initialAnimals);
     }
   }, [currentScore]);
 
