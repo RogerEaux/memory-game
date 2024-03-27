@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 32px;
+  color: var(--white);
+}
+
+header h1 {
+  align-self: center;
+  font-family: DeadBamboo;
+  font-size: 6rem;
+  text-align: center;
+}
+
+main {
+  margin: 64px 32px;
+}
