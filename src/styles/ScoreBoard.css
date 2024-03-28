@@ -11,9 +11,24 @@
   background-color: var(--black);
 }
 
+.score-board img {
+  align-self: center;
+  width: 85vw;
+  height: auto;
+}
+
+.score-board img + p {
+  margin-top: 16px;
+  align-self: center;
+}
+
 @media (max-width: 600px) {
   .score-board {
     font-size: 1.4rem;
     border: 4px solid var(--orange);
+  }
+
+  .score-board img {
+    width: 75vw;
   }
 }
